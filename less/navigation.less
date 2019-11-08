@@ -1,1 +1,50 @@
 // Navigation code here
+
+nav {
+    
+    width: 100%;
+    .flexBox();
+    flex-direction: column;
+    padding: 0 0 2% 0;
+    background: #f4f4f4;
+    border: 1px double #e0e0e0;
+    border-radius: 10px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    opacity: 0.95;
+
+    .logo {
+        justify-content: center;
+        margin: 2%;
+
+        h1 {
+            text-align: center;
+            font-size: 3.5rem;
+        }
+    } // This closes logo class
+
+    .links {
+        .flexBox();
+        width: 95%;
+        margin: 0 2%;
+        justify-content: center;
+        text-align: center;
+
+        .link {
+            margin: 0 2%;
+            font-size: 1.3rem;
+            }
+    } // This closes link class
+    
+} // This closes nav //
+
+@media @phone {
+
+    nav .links .link {
+       margin: 0 4%;
+       font-size: 1.4rem;
+       font-variant: bold;
+    }
+
+}
